@@ -4,7 +4,10 @@
   "description": "Node.js module to ask for configuration via interactive shell",
   "main": "lib",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "./ci/build.js",
+    "test": "./ci/test.js",
+    "cover": "./ci/cover.js",
+    "report": "./ci/report.js"
   },
   "repository": {
     "type": "git",
