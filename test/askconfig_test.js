@@ -1,36 +1,38 @@
 /**
  * Test case for askconfig.
- * Runs with nodeunit.
+ * Runs with mocha.
  */
+"use strict";
 
-var askconfig = require('../lib/askconfig.js'),
+const askconfig = require('../lib/askconfig.js'),
     childProcess = require('child_process'),
+    assert = require('assert'),
     injectmock = require('injectmock');
 
-exports.setUp = function (done) {
-    done();
-};
-
-exports.tearDown = function (done) {
-    injectmock.restoreAll();
-    done();
-};
-
-exports['Askconfig'] = function (test) {
-    var shell = require.resolve('../doc/mockups/mock_some_shell.js');
-    var spawn = childProcess.spawn(shell, {
-        stdio: [
-            process.stdin,
-            process.stdout,
-            process.stderr
-        ]
+describe('askconfig', () => {
+    before((done) => {
+        done();
     });
-    setTimeout(function () {
-        process.stdin.write('bar\n\n\n');
+
+    after((done) => {
+        injectmock.restoreAll();
+        done();
+    });
+
+    it('Askconfig', (done) => {
+        let shell = require.resolve('../doc/mockups/mock_some_shell.js');
+        let spawn = childProcess.spawn(shell, {
+            stdio: [
+                process.stdin,
+                process.stdout,
+                process.stderr
+            ]
+        });
+        //process.stdin.write('bar\n\n\n');
         spawn.kill();
-    }, 500);
-    spawn.on('exit', function () {
-        test.done();
+        spawn.on('exit', () => {
+            done();
+        });
     });
-};
+});
 

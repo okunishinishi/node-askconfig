@@ -1,24 +1,21 @@
 /**
  * Test case for questionInterface.
- * Runs with nodeunit.
+ * Runs with mocha.
  */
+"use strict";
 
-var questionInterface = require('../lib/question_interface.js');
+const questionInterface = require('../lib/question_interface.js'),
+    assert = require('assert');
 
-exports.setUp = function (done) {
-    done();
-};
+describe('qi', () => {
 
-exports.tearDown = function (done) {
-    done();
-};
-
-exports['Question interface'] = function (test) {
-    var qi = questionInterface();
-    test.ok(qi);
-    qi.on('close', function () {
-        test.done();
+    it('Question interface', (done) => {
+        let qi = questionInterface();
+        assert.ok(qi);
+        qi.on('close', () => {
+            done();
+        });
+        qi.close();
     });
-    qi.close();
-};
+});
 

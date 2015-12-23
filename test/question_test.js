@@ -1,20 +1,25 @@
 /**
  * Test case for question.
- * Runs with nodeunit.
+ * Runs with mocha.
  */
+"use strict";
 
-var question = require('../lib/question.js');
+const question = require('../lib/question.js'),
+    assert = require('assert');
 
-exports.setUp = function(done) {
-    done();
-};
+describe('question', () => {
 
-exports.tearDown = function(done) {
-    done();
-};
+    before((done) => {
+        done();
+    });
 
-exports['Question'] = function(test){
+    after((done) => {
+        done();
+    });
 
-    test.done();
-};
+
+    it('Question', (done) => {
+        done();
+    });
+});
 

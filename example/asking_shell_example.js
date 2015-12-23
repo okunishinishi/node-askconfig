@@ -1,11 +1,12 @@
 #!/usr/bin/env node
+"use strict";
 
-var askconfig = require('askconfig');
+const askconfig = require('askconfig');
 
 askconfig({
     name: 'default-name',
     description: ''
-}, function (err, result) {
+}, (err, result) => {
     if (err) {
         console.error(err);
         process.exit(1);

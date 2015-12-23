@@ -1,9 +1,10 @@
 #!/usr/bin/env node
+"use strict";
 
-var askconfig = require('../../lib');
+const askconfig = require('../../lib');
 
 askconfig({
     name: 'foo'
-}, function (err, result) {
+}, (err, result) => {
     console.log('result', result);
 });
