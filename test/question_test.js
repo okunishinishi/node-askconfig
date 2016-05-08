@@ -2,24 +2,23 @@
  * Test case for question.
  * Runs with mocha.
  */
-"use strict";
+'use strict'
 
-const question = require('../lib/question.js'),
-    assert = require('assert');
+const question = require('../lib/question.js')
+const assert = require('assert')
 
 describe('question', () => {
 
-    before((done) => {
-        done();
-    });
+  before((done) => {
+    done()
+  })
 
-    after((done) => {
-        done();
-    });
+  after((done) => {
+    done()
+  })
 
-
-    it('Question', (done) => {
-        done();
-    });
-});
+  it('Question', (done) => {
+    done()
+  })
+})
 

@@ -2,12 +2,12 @@
  * Bud file for index.js
  */
 
-"use strict";
+'use strict'
 
 module.exports = {
-    force: true,
-    mode: '444',
-    data: {
-        pkg: require('../package.json')
-    }
-};
+  force: true,
+  mode: '444',
+  data: {
+    pkg: require('../package.json')
+  }
+}
