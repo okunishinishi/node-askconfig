@@ -1,6 +1,6 @@
 {
   "name": "askconfig",
-  "version": "3.0.2",
+  "version": "3.0.3",
   "description": "Node.js module to ask for configuration via interactive shell",
   "main": "lib",
   "scripts": {
@@ -25,18 +25,18 @@
     "argx": "^2.0.2",
     "cli-color": "^1.1.0",
     "co": "^4.6.0",
-    "objnest": "^2.0.5"
+    "objnest": "^3.0.0"
   },
   "devDependencies": {
-    "ape-compiling": "^4.2.0",
+    "ape-compiling": "^4.3.2",
     "ape-covering": "^3.0.3",
-    "ape-releasing": "^3.1.1",
+    "ape-releasing": "^4.0.1",
     "ape-reporting": "^3.0.1",
-    "ape-tasking": "^4.0.1",
+    "ape-tasking": "^4.0.2",
     "ape-testing": "^4.0.0",
-    "ape-tmpl": "^5.0.2",
-    "ape-updating": "^3.0.2",
-    "coz": "^6.0.2",
+    "ape-tmpl": "^5.0.5",
+    "ape-updating": "^4.0.1",
+    "coz": "^6.0.3",
     "coz-tmpl": "^1.2.1",
     "injectmock": "^2.0.0"
   },
