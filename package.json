@@ -1,10 +1,11 @@
 {
   "name": "askconfig",
-  "version": "3.0.6",
+  "version": "4.0.1",
   "description": "Node.js module to ask for configuration via interactive shell",
   "main": "lib",
   "scripts": {
-    "test": "./ci/test.js"
+    "test": "./ci/test.js",
+    "prepare": "./ci/build.js"
   },
   "repository": "okunishinishi/node-askconfig",
   "keyword": [
@@ -24,22 +25,20 @@
   "dependencies": {
     "argx": "^3.0.0",
     "cli-color": "^1.1.0",
-    "co": "^4.6.0",
     "objnest": "^3.0.6"
   },
   "devDependencies": {
-    "amocha": "^1.0.10",
+    "amocha": "^2.0.0",
     "ape-releasing": "^4.0.4",
-    "ape-reporting": "^3.0.1",
     "ape-tasking": "^4.0.8",
-    "ape-tmpl": "^5.0.15",
+    "ape-tmpl": "^6.0.0",
     "ape-updating": "^4.0.5",
     "coz": "^6.0.16",
     "coz-tmpl": "^1.2.1",
     "injectmock": "^2.0.0"
   },
   "engines": {
-    "node": ">=6",
-    "npm": ">=3"
+    "node": ">=7.6",
+    "npm": ">=4"
   }
 }
