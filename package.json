@@ -25,20 +25,20 @@
   "dependencies": {
     "argx": "^3.0.0",
     "cli-color": "^1.1.0",
-    "objnest": "^3.0.6"
+    "objnest": "^4.1.0"
   },
   "devDependencies": {
-    "amocha": "^2.0.0",
+    "amocha": "^5.0.0",
     "ape-releasing": "^4.0.4",
     "ape-tasking": "^4.0.8",
-    "ape-tmpl": "^6.0.0",
+    "ape-tmpl": "^6.0.10",
     "ape-updating": "^4.0.5",
-    "coz": "^6.0.16",
+    "coz": "^7.0.1",
     "coz-tmpl": "^1.2.1",
     "injectmock": "^2.0.0"
   },
   "engines": {
-    "node": ">=7.6",
-    "npm": ">=4"
+    "node": ">=8",
+    "npm": ">=5"
   }
 }
