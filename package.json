@@ -1,6 +1,6 @@
 {
   "name": "askconfig",
-  "version": "4.0.1",
+  "version": "4.0.2",
   "description": "Node.js module to ask for configuration via interactive shell",
   "main": "lib",
   "scripts": {
