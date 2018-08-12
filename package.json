@@ -1,6 +1,6 @@
 {
   "name": "askconfig",
-  "version": "4.0.2",
+  "version": "4.0.3",
   "description": "Node.js module to ask for configuration via interactive shell",
   "main": "lib",
   "scripts": {
@@ -25,7 +25,7 @@
   "dependencies": {
     "argx": "^3.0.0",
     "cli-color": "^1.1.0",
-    "objnest": "^5.0.1"
+    "objnest": "^5.0.2"
   },
   "devDependencies": {
     "amocha": "^5.0.0",
